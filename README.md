@@ -17,6 +17,9 @@ Figure 1(a)  XR ELITE
 
 Figure 1(b)  XR ELITE(Without Battery)
 
+
+
+
     In facial tracking data collection, the system captures comprehensive facial movements, including eye movements, pupil position, eye openness, and movements of the lips, teeth, tongue, cheeks, and jaw. Specifically, the infrared sensor and illuminator enable highly precise measurement of gaze direction, pupil size, and eye openness. Additionally, 53 types of blendshapes (facial movement combinations used for detailed expression tracking) are utilized to track facial movements at a frequency of 60Hz. This technology allows real-time capturing of facial expressions and movements, which are then reflected onto an avatar, enabling more natural and realistic communication between the user and the system.
  Unlike other VR devices, which use different approaches for face-tracking data collection, the XR ELITE separately captures the upper and lower parts of the face (as shown in Figure 2). These are categorized into Eye Expression (upper face) and Lip Expression (lower face), combining data from both for more accurate tracking.
 

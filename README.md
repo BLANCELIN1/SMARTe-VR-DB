@@ -42,3 +42,52 @@ For this study, we utilized the VIVE OpenXR Face Tracking Library. The Eye Expre
 
 
 The specific facial regions and data collected in our study are summarized in Table 1.
+
+Table 1
+| Name | Description |
+|------|------------|
+| **XR_EYE_EXPRESSION_LEFT_BLINK_HTC** | This blend shape influences blinking of the left eye. When this value goes higher, the left eye approaches closed. |
+| **XR_EYE_EXPRESSION_LEFT_DOWN_HTC** | This blend shape influences the muscles around the left eye, moving these muscles further downward with a higher value. |
+| **XR_EYE_EXPRESSION_LEFT_IN_HTC** | This blend shape influences the muscles around the left eye, moving these muscles further rightward with a higher value. |
+| **XR_EYE_EXPRESSION_LEFT_OUT_HTC** | This blend shape influences the muscles around the left eye, moving these muscles further leftward with a higher value. |
+| **XR_EYE_EXPRESSION_LEFT_SQUEEZE_HTC** | The blend shape closes the eye tightly, and at that time, XR_EYE_EXPRESSION_LEFT_BLINK_HTC value is 1. |
+| **XR_EYE_EXPRESSION_LEFT_UP_HTC** | This blend shape influences the muscles around the left eye, moving these muscles further upward with a higher value. |
+| **XR_EYE_EXPRESSION_LEFT_WIDE_HTC** | This blend shape keeps the left eye wide, and at that time, XR_EYE_EXPRESSION_LEFT_BLINK_HTC value is 0. |
+| **XR_EYE_EXPRESSION_RIGHT_BLINK_HTC** | This blend shape influences blinking of the right eye. When this value goes higher, the right eye approaches closed. |
+| **XR_EYE_EXPRESSION_RIGHT_DOWN_HTC** | This blend shape influences the muscles around the right eye, moving these muscles further downward with a higher value. |
+| **XR_EYE_EXPRESSION_RIGHT_IN_HTC** | This blend shape influences the muscles around the right eye, moving these muscles further leftward with a higher value. |
+| **XR_EYE_EXPRESSION_RIGHT_OUT_HTC** | This blend shape influences the muscles around the right eye, moving these muscles further rightward with a higher value. |
+| **XR_EYE_EXPRESSION_RIGHT_SQUEEZE_HTC** | The blend shape closes the eye tightly, and at that time, XR_EYE_EXPRESSION_RIGHT_BLINK_HTC value is 1. |
+| **XR_EYE_EXPRESSION_RIGHT_UP_HTC** | This blend shape influences the muscles around the right eye, moving these muscles further upward with a higher value. |
+| **XR_EYE_EXPRESSION_RIGHT_WIDE_HTC** | This blend shape keeps the right eye wide, and at that time, XR_EYE_EXPRESSION_RIGHT_BLINK_HTC value is 0. |
+| **XR_LIP_EXPRESSION_CHEEK_PUFF_LEFT_HTC** | This blend shape puffs up the left side of the cheek further with a higher value. |
+| **XR_LIP_EXPRESSION_CHEEK_PUFF_RIGHT_HTC** | This blend shape puffs up the right side of the cheek further with a higher value. |
+| **XR_LIP_EXPRESSION_CHEEK_SUCK_HTC** | This blend shape sucks in the cheeks on both sides further with a higher value. |
+| **XR_LIP_EXPRESSION_JAW_FORWARD_HTC** | This blend shape moves the jaw forward with a higher value. |
+| **XR_LIP_EXPRESSION_JAW_LEFT_HTC** | This blend shape moves the jaw further leftward with a higher value. |
+| **XR_LIP_EXPRESSION_JAW_OPEN_HTC** | This blend shape opens the mouth further with a higher value. |
+| **XR_LIP_EXPRESSION_JAW_RIGHT_HTC** | This blend shape moves the jaw further rightward with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_APE_SHAPE_HTC** | This blend shape stretches the jaw further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_LOWER_DOWNLEFT_HTC** | This blend shape lowers the left lower lip further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_LOWER_DOWNRIGHT_HTC** | This blend shape lowers the right lower lip further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_LOWER_INSIDE_HTC** | This blend shape rolls in the lower lip further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_LOWER_LEFT_HTC** | This blend shape moves your lower lip leftward. |
+| **XR_LIP_EXPRESSION_MOUTH_LOWER_OVERLAY_HTC** | This blend shape stretches the lower lip further and lays it on the upper lip further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_LOWER_OVERTURN_HTC** | This blend shape pouts your lower lip. Can be used with XR_LIP_EXPRESSION_MOUTH_UPPER_UPRIGHT_HTC and XR_LIP_EXPRESSION_MOUTH_LOWER_DOWNRIGHT_HTC to complete the upper O mouth shape. |
+| **XR_LIP_EXPRESSION_MOUTH_LOWER_RIGHT_HTC** | This blend shape moves your lower lip rightward. |
+| **XR_LIP_EXPRESSION_MOUTH_POUT_HTC** | This blend shape allows the lips to pout more with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_RAISER_LEFT_HTC** | This blend shape raises the left side of the mouth further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_RAISER_RIGHT_HTC** | This blend shape raises the right side of the mouth further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_STRETCHER_LEFT_HTC** | This blend shape lowers the left side of the mouth further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_STRETCHER_RIGHT_HTC** | This blend shape lowers the right side of the mouth further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_UPPER_INSIDE_HTC** | This blend shape rolls in the upper lip further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_UPPER_LEFT_HTC** | This blend shape moves your upper lip leftward. |
+| **XR_LIP_EXPRESSION_MOUTH_UPPER_OVERTURN_HTC** | This blend shape pouts your upper lip. Can be used with XR_LIP_EXPRESSION_MOUTH_UPPER_UPRIGHT_HTC and XR_LIP_EXPRESSION_MOUTH_UPPER_UPLEFT_HTC to complete the upper O mouth shape. |
+| **XR_LIP_EXPRESSION_MOUTH_UPPER_RIGHT_HTC** | This blend shape moves your upper lip rightward. |
+| **XR_LIP_EXPRESSION_MOUTH_UPPER_UPLEFT_HTC** | This blend shape raises the left upper lip further with a higher value. |
+| **XR_LIP_EXPRESSION_MOUTH_UPPER_UPRIGHT_HTC** | This blend shape raises the right upper lip further with a higher value. |
+| **XR_LIP_EXPRESSION_TONGUE_DOWNLEFT_MORPH_HTC** | This blend shape doesn’t make sense. When both the left and down blend shapes appear at the same time, the tongue will be deformed. |
+| **XR_LIP_EXPRESSION_TONGUE_DOWNRIGHT_MORPH_HTC** | This blend shape doesn’t make sense. When both the right and down blend shapes appear at the same time, the tongue will be deformed. |
+| **XR_LIP_EXPRESSION_TONGUE_DOWN_HTC** | This blend shape sticks the tongue out and down extremely. |
+| **XR_LIP_EXPRES
+

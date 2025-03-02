@@ -9,13 +9,10 @@
    
    Additionally, the XR ELITE can be transformed into a lightweight, glasses-like form by detaching the rear battery pack (see Figure 1(b)), making it suitable for long-duration use. This feature aligns well with the objective of our experiment, which aims to reduce the burden on students during extended sessions. Reducing physical weight strain is considered crucial for maintaining long-term concentration. On the other hand, considering the stability of data collection and battery life, we adopted PC VR mode instead of standalone mode. By drawing power directly from a PC, we were able to ensure a stable, high-frequency, and long-duration data collection environment.
 
-![image](https://github.com/user-attachments/assets/62984e0d-aa1f-4699-abf1-d584d6d699a6)
+| ![Figure 1(a) XR ELITE](https://github.com/user-attachments/assets/62984e0d-aa1f-4699-abf1-d584d6d699a6) | ![Figure 1(b) XR ELITE (Without Battery)](https://github.com/user-attachments/assets/a370a77f-096c-48f2-abf1-c4d4e3140dc3) |
+|:---:|:---:|
+| **Figure 1(a) XR ELITE** | **Figure 1(b) XR ELITE (Without Battery)** |
 
-Figure 1(a)  XR ELITE
-
-![image](https://github.com/user-attachments/assets/a370a77f-096c-48f2-abf1-c4d4e3140dc3)
-
-Figure 1(b)  XR ELITE(Without Battery)
 
 
 

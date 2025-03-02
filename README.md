@@ -89,5 +89,55 @@ Table 1
 | **XR_LIP_EXPRESSION_TONGUE_DOWNLEFT_MORPH_HTC** | This blend shape doesn’t make sense. When both the left and down blend shapes appear at the same time, the tongue will be deformed. |
 | **XR_LIP_EXPRESSION_TONGUE_DOWNRIGHT_MORPH_HTC** | This blend shape doesn’t make sense. When both the right and down blend shapes appear at the same time, the tongue will be deformed. |
 | **XR_LIP_EXPRESSION_TONGUE_DOWN_HTC** | This blend shape sticks the tongue out and down extremely. |
-| **XR_LIP_EXPRES
+| **XR_LIP_EXPRESSION_TONGUE_LEFT_HTC** | This blend shape sticks the tongue out and left extremely. |
+| **XR_LIP_EXPRESSION_TONGUE_LONGSTEP1_HTC** | This blend shape sticks the tongue out slightly. In step 1 of extending the tongue, the main action of the tongue is to lift up, and the elongated length only extends to a little bit beyond the teeth. |
+| **XR_LIP_EXPRESSION_TONGUE_LONGSTEP2_HTC** | This blend shape sticks the tongue out extremely. Continuing from step 1, it extends the tongue to the longest. |
+| **XR_LIP_EXPRESSION_TONGUE_RIGHT_HTC** | This blend shape sticks the tongue out and right extremely. |
+| **XR_LIP_EXPRESSION_TONGUE_ROLL_HTC** | This blend shape sticks the tongue out with a rolling motion. |
+| **XR_LIP_EXPRESSION_TONGUE_UPLEFT_MORPH_HTC** | This blend shape doesn’t make sense. When both the left and up blend shapes appear at the same time, the tongue will be deformed. |
+| **XR_LIP_EXPRESSION_TONGUE_UPRIGHT_MORPH_HTC** | This blend shape doesn’t make sense. When both the right and up blend shapes appear at the same time, the tongue will be deformed. |
+| **XR_LIP_EXPRESSION_TONGUE_UP_HTC** | This blend shape sticks the tongue out and up extremely. |
+
+This system provides a foundation for predicting learners' comprehension levels by tracking students' learning behaviors in detail and collecting related data. The learning behavior data in this system refers to actions such as how students take notes while watching lectures or how they annotate lecture materials. These behaviors reflect learners' learning styles and comprehension levels and serve as a reference for providing appropriate learning support tailored to each student.
+
+The collected data includes detailed log information about various actions students perform in each section, with multiple recorded items, as shown in Table 2. The following sections describe how these data items are utilized and how they are analyzed in relation to learners' comprehension levels.
+
+First, the collected data is structured into 10 columns, starting with the student ID, followed by details such as the start and end times of each session, action types, and interaction details. The data is recorded based on attributes such as "User ID," "Session," "Start Time (Unix Time)," and "End Time (Unix Time)," allowing tracking of when each action occurs.
+
+Particularly, the use of Unix time ensures temporal consistency and enables consistent recording of detailed behavior logs. For example, in a provided sample case, a user with User ID "Lin" highlighted the text "He is a boy" on Page 1 of the lecture slides in yellow during Session 1 at the Unix timestamp 1725459023.
+
+Table 2: Example of Learning Log Data Storage
+
+| User ID | Session  | Start-Time (Unix Time) | End-Time (Unix Time) | Start-Time (Lecture Time) | End-Time (Lecture Time) |
+|---------|---------|----------------------|----------------------|--------------------------|--------------------------|
+| Lin     | Session1 | 1725459023           | 1725459045           | 00:01:23:30               | 00:01:23:45              |
+
+| Action Type | Interaction Mode | Interaction Target | Interaction Outcome |
+|------------|----------------|------------------|-------------------|
+| TextBook   | Yellow Mark    | Page1            | He is a boy       |
+
+
+
+Detailed Explanation of Data Fields
+User ID: Records a unique name or number for each student.
+Session: Records the current session. A complete session spans from the start of a lecture video playback to the end of the AUTO QA multiple-choice question section.
+Start-Time (Unix Time): Records the Unix timestamp when the action begins. Unix time refers to the number of seconds elapsed since UTC January 1, 1970, 00:00:00, without considering leap seconds. The smallest recording unit is milliseconds (ms).
+End-Time (Unix Time): Records the Unix timestamp when the action ends.
+Start-Time (Lecture Time): Records the lecture video timestamp when the action starts. The AutoQA section defaults to 0.
+End-Time (Lecture Time): Records the lecture video timestamp when the action ends. The AutoQA section defaults to 0.
+Action Type: Describes the major category of the user's activity or operation platform. There are three main categories:
+TextBook
+Question
+FaceTrack
+Interaction Mode: Describes the specific method of interaction between the user and the system.
+For example, under the TextBook category, possible interactions include:
+Yellow Mark
+Red Mark
+Page Turn, etc.
+Interaction Target: Describes the object or goal of the interaction.
+For example, the current page or a specific question.
+Interaction Outcome: Describes the result or output of the interaction.
+For example, the highlighted target or the selected answer.
+
+
 

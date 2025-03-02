@@ -120,22 +120,31 @@ Table 2: Example of Learning Log Data Storage
 
 Detailed Explanation of Data Fields
 User ID: Records a unique name or number for each student.
+
 Session: Records the current session. A complete session spans from the start of a lecture video playback to the end of the AUTO QA multiple-choice question section.
+
 Start-Time (Unix Time): Records the Unix timestamp when the action begins. Unix time refers to the number of seconds elapsed since UTC January 1, 1970, 00:00:00, without considering leap seconds. The smallest recording unit is milliseconds (ms).
+
 End-Time (Unix Time): Records the Unix timestamp when the action ends.
+
 Start-Time (Lecture Time): Records the lecture video timestamp when the action starts. The AutoQA section defaults to 0.
+
 End-Time (Lecture Time): Records the lecture video timestamp when the action ends. The AutoQA section defaults to 0.
+
 Action Type: Describes the major category of the user's activity or operation platform. There are three main categories:
 TextBook
 Question
 FaceTrack
+
 Interaction Mode: Describes the specific method of interaction between the user and the system.
 For example, under the TextBook category, possible interactions include:
 Yellow Mark
 Red Mark
 Page Turn, etc.
+
 Interaction Target: Describes the object or goal of the interaction.
 For example, the current page or a specific question.
+
 Interaction Outcome: Describes the result or output of the interaction.
 For example, the highlighted target or the selected answer.
 

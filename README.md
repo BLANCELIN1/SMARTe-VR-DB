@@ -148,5 +148,5 @@ For example, the current page or a specific question.
 Interaction Outcome: Describes the result or output of the interaction.
 For example, the highlighted target or the selected answer.
 
-
+Since our data involves personal privacy, each entry must be individually verified before uploading. At this stage, the database contains a limited amount of data, but it will gradually increase as the experiment progresses. Additionally, we plan to incorporate PC data in the future.
 

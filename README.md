@@ -31,16 +31,14 @@ There are several major advantages to collecting eye expressions and lip express
 For this study, we utilized the VIVE OpenXR Face Tracking Library. The Eye Expression and Lip Expression data are represented as enumerations (enum). For instance, the enumeration XR_EYE_EXPRESSION_LEFT_BLINK_HTC indicates how much the user's left eye is closed—a value closer to 1 means the eye is fully closed, while a value closer to 0 means it is fully open (see Figure 3(a) and 3(b)). Similarly, for lip expressions, the enumeration XR_LIP_EXPRESSION_JAW_OPEN_HTC represents how much the user’s mouth is open—a value closer to 1 means the mouth is fully open, whereas a value closer to 0 means it is closed (see Figure 4(a) and 3(b)).
 
 
-![image](https://github.com/user-attachments/assets/7d839ca6-30fb-42b0-984a-7455d95aeb5f)
+| ![image](https://github.com/user-attachments/assets/7d839ca6-30fb-42b0-984a-7455d95aeb5f) | ![image](https://github.com/user-attachments/assets/5dc84f94-95db-4f38-8b94-fea1b13ac045) |
+|:---:|:---:|
+| **Figure 3** XR_EYE_EXPRESSION_LEFT_BLINK_HTC （0）| **Figure 3** XR_EYE_EXPRESSION_LEFT_BLINK_HTC （1）|
 
-![image](https://github.com/user-attachments/assets/5dc84f94-95db-4f38-8b94-fea1b13ac045)
 
-Figure 3     XR_EYE_EXPRESSION_LEFT_BLINK_HTC
+| ![image](https://github.com/user-attachments/assets/aad596cd-9f13-4f3e-ad51-ff79aed45e40) | ![image](https://github.com/user-attachments/assets/70ebf529-67ce-4974-93a9-5f2ca8452893) |
+|:---:|:---:|
+| **Figure 4** XR_LIP_EXPRESSION_JAW_OPEN_HTC（0） | **Figure 4** XR_LIP_EXPRESSION_JAW_OPEN_HTC（1） |
 
-![image](https://github.com/user-attachments/assets/aad596cd-9f13-4f3e-ad51-ff79aed45e40)
-
-![image](https://github.com/user-attachments/assets/70ebf529-67ce-4974-93a9-5f2ca8452893)
-
-Figure 4     XR_LIP_EXPRESSION_JAW_OPEN_HTC
 
 The specific facial regions and data collected in our study are summarized in Table 1.

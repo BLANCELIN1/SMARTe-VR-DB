@@ -1,4 +1,4 @@
-# SMARTe-VR-DB
+# BARTe-VR: Biometric Adaptive Response Technology applied to e-Learning in Virtual Reality
 
    In recent years, with the advancement of artificial intelligence (AI) technology, adaptive learning, which supports learning according to the characteristics of individual learners, has been attracting attention in the field of education. In particular, a system that optimizes learning content by analyzing learners' eye gaze, facial expressions, and behavioral data in real time has the potential to respond to individual optimization, which has been difficult to achieve with conventional standardized education. However, adaptive learning has the "cold start problem," in which an optimal learning plan cannot be provided with insufficient initial learner data, and the issue that information based on individual learner characteristics is not sufficiently collected and analyzed.
   
